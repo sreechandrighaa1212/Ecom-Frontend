@@ -1,0 +1,21 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 249, 255, 0.95) 100%);
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(109, 40, 217, 0.2);
+  border: 2px solid rgba(109, 40, 217, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

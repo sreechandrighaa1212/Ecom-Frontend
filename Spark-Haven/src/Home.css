@@ -1,0 +1,68 @@
+.home {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 249, 255, 0.95) 100%);
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(109, 40, 217, 0.2);
+  border: 2px solid rgba(109, 40, 217, 0.1);
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #6D28D9, #EC4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 1s ease-out;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.section-title {
+  margin: 40px 0 20px;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #6D28D9, #EC4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #6D28D9, #EC4899, #06B6D4);
+  border-radius: 2px;
+}
+
+.home-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
